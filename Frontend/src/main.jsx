@@ -10,7 +10,6 @@ import Home from "./pages/Home/Home.jsx";
 import Films from "./pages/Films/Films.jsx";
 import FilmDetails from "./pages/FilmDetails/FilmDetails.jsx";
 import Fiction from "./pages/Fiction/Fiction.jsx";
-import Screenwriting from "./pages/Screenwriting/Screenwriting.jsx";
 import ScriptReading from "./pages/ScriptReading/ScriptReading.jsx";
 import Contact from "./pages/Contact/Contact.jsx";
 
