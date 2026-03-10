@@ -1,0 +1,63 @@
+/* ---------- Reset / Box Model ---------- */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* ---------- Remove Default Browser Junk ---------- */
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+/* ---------- Core Page Behaviour ---------- */
+
+html,
+body,
+#root {
+  width: 100%;
+  height: 100%;
+  --accent-color: #f5c84b;  
+}
+
+/* ---------- Base Typography ---------- */
+
+body {
+  background: black;
+  color: white;
+
+  font-family: Oswald, system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  text-rendering: optimizeLegibility;
+
+  line-height: 1.5;
+  overflow-x: hidden;
+}
+
+/* ---------- Media Defaults ---------- */
+
+img,
+video {
+  max-width: 100%;
+  display: block;
+}
+
+/* ---------- Links ---------- */
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* ---------- Buttons ---------- */
+
+button {
+  font: inherit;
+}

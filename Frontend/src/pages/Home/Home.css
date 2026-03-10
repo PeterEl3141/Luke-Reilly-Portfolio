@@ -1,0 +1,190 @@
+.home {
+  min-height: 100vh;
+  width: 100%;
+  background: linear-gradient(
+  135deg,
+  #000000 0%,
+  #000 55%
+);
+  color: white;
+
+  /* breathing room */
+  padding: 32px 32px 0 32px; 
+}
+
+.home-inner {
+  position: relative;
+  min-height: calc(100vh - 32px);
+}
+
+/* ---------------------------
+   BIG TYPOGRAPHY ANCHOR
+--------------------------- */
+
+.home-type {
+  position: relative;
+  min-height: 100vh;
+}
+
+.home-titleRow {
+  position: absolute;
+  left: 0;
+  bottom: 20px;
+
+  display: flex;
+  align-items: flex-end;
+
+  /* This is your “kerning” control between L and rest of name */
+  gap: 0.06em; /* try 0.04em–0.12em */
+}
+
+.home-L {
+  position: static;          /* remove absolute positioning */
+  font-size: clamp(400px, 25vw, 500px);
+  line-height: 0.95;
+  font-weight: 300;
+  letter-spacing: -0.02em;
+  opacity: 0.85;
+  transform: translateY(12px);
+}
+
+.home-name {
+  position: static;          /* remove absolute positioning */
+  margin: 0;
+  font-size: clamp(90px, 15vw, 130px);
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  opacity: 0.85;
+}
+
+.home-name-rest {
+  display: inline-block;
+  opacity: 0.95;
+}
+
+/* ---------------------------
+   PORTRAIT
+--------------------------- */
+
+.home-portrait {
+  position: absolute;
+  right: -60px;
+  bottom: 0;
+  top: auto;
+
+  width: min(750px, 60vw);
+}
+
+.home-portrait img {
+  width: 100%;
+  height: auto;
+  display: block;
+  bottom: 0;
+
+  border-radius: 2px;
+  opacity: 0.92;
+}
+
+/* ---------------------------
+   INTRO TEXT
+--------------------------- */
+
+.home-intro {
+  position: absolute;
+  right: min(60vw, 800px); /* roughly the portrait width */
+  bottom: 25vh;
+  width: 360px;
+}
+
+.home-role {
+  margin: 0 0 10px 0;
+  font-size: 16px;
+  letter-spacing: 0.04em;
+  opacity: 0.9;
+  color: var(--accent-color);
+}
+
+.home-blurb {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.55;
+  opacity: 0.85;
+}
+
+/*read more with doodle effects*/
+
+.home-readMore {
+  position: relative;
+  display: inline-block;
+
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.82rem;
+  opacity: 0.78;
+
+  transition: opacity 0.25s ease;
+}
+
+.home-readMore:hover {
+  opacity: 1;
+}
+
+.home-readMore::after {
+  content: "";
+  position: absolute;
+  left: -2px;
+  bottom: -7px;
+
+  width: calc(100% + 4px);
+  height: 8px;
+
+  opacity: 0.95;
+  pointer-events: none;
+
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='8' viewBox='0 0 120 8' fill='none'%3E%3Cpath d='M2 5.5C19 3.7 34 4.6 49 5.1C67 5.8 84 4.1 101 4.5C107 4.7 112 4.9 118 4.2' stroke='%23f5c84b' stroke-width='2.2' stroke-linecap='round'/%3E%3C/svg%3E")
+    no-repeat center / 100% 100%;
+
+  transform: scaleX(0);
+  transform-origin: left center;
+  transition: transform 0.28s ease;
+}
+
+.home-readMore:hover::after {
+  transform: scaleX(1);
+}
+
+/* ---------------------------
+   RESPONSIVE TWEAKS
+--------------------------- */
+
+@media (max-width: 800px) {
+  .home {
+    padding: 20px;
+  }
+
+  .home-portrait {
+    position: relative;
+    top: auto;
+    right: auto;
+
+    width: min(520px, 100%);
+    margin: 10vh auto 0 auto;
+  }
+
+  .home-intro {
+    position: relative;
+    right: auto;
+    bottom: auto;
+
+    width: 100%;
+    margin-top: 24px;
+  }
+
+
+  .home-name {
+    left: 20px;
+    bottom: 20px;
+  }
+}

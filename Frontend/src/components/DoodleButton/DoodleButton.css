@@ -1,0 +1,55 @@
+.doodle-button {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  
+    padding: 0.7rem 2rem;
+    background: transparent;
+    border: none;
+    outline: none;
+  
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-size: 0.9rem;
+    line-height: 1;
+  
+    cursor: pointer;
+    overflow: visible;
+    isolation: isolate;
+  }
+  
+  .doodle-button-label {
+    position: relative;
+    z-index: 2;
+  }
+  
+  .doodle-button-ring {
+    position: absolute;
+    inset: -12px -20px;
+    width: calc(100% + 40px);
+    height: calc(100% + 24px);
+    pointer-events: none;
+    z-index: 1;
+    overflow: visible;
+  }
+  
+  .doodle-button-ring path {
+    fill: none;
+    stroke: white;
+    stroke-width: 2.2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  
+    stroke-dasharray: 520;
+    stroke-dashoffset: 520;
+  
+    transition: stroke-dashoffset 0.7s ease;
+  }
+  
+  .doodle-button:hover .doodle-button-ring path {
+    stroke-dashoffset: 0;
+    stroke: var(--accent-color);
+  }

@@ -1,0 +1,94 @@
+import "./Contact.css";
+import { motion } from "framer-motion";
+
+const Contact = () => {
+  return (
+    <section className="contact-page">
+      <motion.div
+        className="contact-header"
+        initial={{ opacity: 0, y: 24 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.7, ease: "easeOut" }}
+      >
+        <p className="contact-kicker">Contact</p>
+        <h1 className="contact-title">Luke Reilly</h1>
+      </motion.div>
+
+      <div className="contact-grid">
+        <motion.div
+          className="contact-column contact-bio"
+          initial={{ opacity: 0, y: 24 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.2 }}
+          transition={{ duration: 0.7, ease: "easeOut" }}
+        >
+          <p>
+            Luke Reilly is a screenwriter, director and published short story
+            writer whose co-directed short film debut, Meat, was produced by
+            Scala Productions and shot in Uganda. It was selected for the César
+            Académie’s Golden Nights Programme, Slamdance, and won Best Short at
+            the 2021 AMAAs (Africa’s biggest film awards). It was officially
+            endorsed by UNESCO and Survival International.
+          </p>
+
+          <p>
+            Luke followed this up with his screenplay, Small Gods, funded by
+            Sovereign Films (known for Triangle of Sadness), which received nine
+            nominations at the 2025 AMAAs and won Best Feature at the
+            BIFA-qualifying Cornwall Film Festival. It is set for a cinema
+            release this year.
+          </p>
+
+          <p>
+            His writer-director debut, The Love Song of J Alfred Prufrock, is
+            set to be released this year and stars Titanic’s Jonny Phillips. His
+            fiction has appeared online and in print in Ink, Sweat and Tears,
+            Buoy Press and Firewords. He also writes essays online under the
+            search-optimisable but pretentious synonym, Eubulus Kane, and has
+            completed a screenplay about Arctic explorers with big, bushy
+            beards.
+          </p>
+        </motion.div>
+
+        <motion.div
+          className="contact-column contact-details"
+          initial={{ opacity: 0, y: 24 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.2 }}
+          transition={{ duration: 0.7, delay: 0.1, ease: "easeOut" }}
+        >
+          <div className="contact-block">
+            <h2>Email</h2>
+            <a href="mailto:luke@example.com">luke@example.com</a>
+          </div>
+
+          <div className="contact-block">
+            <h2>Instagram</h2>
+            <a
+              href="https://instagram.com/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              @lukereilly
+            </a>
+          </div>
+
+          <div className="contact-block">
+            <h2>Representation</h2>
+            <p>Representation details here if relevant.</p>
+          </div>
+
+          <div className="contact-block">
+            <h2>Availability</h2>
+            <p>
+              Open to directing work, screenwriting projects, script reading,
+              and selected collaborations.
+            </p>
+          </div>
+        </motion.div>
+      </div>
+    </section>
+  );
+};
+
+export default Contact;

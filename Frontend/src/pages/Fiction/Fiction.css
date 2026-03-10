@@ -1,0 +1,162 @@
+.fiction-page {
+    min-height: 100vh;
+    background: black;
+    color: white;
+    padding: 140px 48px 80px;
+  }
+  
+  .fiction-header {
+    max-width: 900px;
+    margin-bottom: 90px;
+  }
+  
+  .fiction-page-title {
+    margin: 0;
+    font-size: clamp(3rem, 7vw, 6rem);
+    font-weight: 400;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+  
+  .fiction-page-intro {
+    margin: 18px 0 0;
+    max-width: 560px;
+    font-size: 1rem;
+    line-height: 1.7;
+    opacity: 0.82;
+  }
+  
+  .fiction-list {
+    display: flex;
+    flex-direction: column;
+    gap: 120px;
+  }
+  
+  .fiction-item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 56px;
+    align-items: center;
+  }
+  
+  .fiction-item.reverse .fiction-item-imageWrap {
+    order: 2;
+  }
+  
+  .fiction-item.reverse .fiction-item-content {
+    order: 1;
+  }
+  
+  .fiction-item-imageWrap {
+    overflow: hidden;
+  }
+  
+  .fiction-item-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.8s ease;
+  }
+  
+  .fiction-item:hover .fiction-item-image {
+    transform: scale(1.03);
+  }
+  
+  .fiction-item-content {
+    max-width: 540px;
+  }
+  
+  .fiction-item-medium {
+    margin: 0 0 10px;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    opacity: 0.55;
+  }
+  
+  .fiction-item-title {
+    margin: 0;
+    font-size: clamp(2rem, 4vw, 4rem);
+    font-weight: 400;
+    line-height: 1.02;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+  
+  .fiction-item-meta {
+    display: flex;
+    gap: 18px;
+    margin-top: 16px;
+    font-size: 0.9rem;
+    letter-spacing: 0.06em;
+    opacity: 0.72;
+    text-transform: uppercase;
+  }
+  
+  .fiction-item-publication {
+    margin: 18px 0 0;
+    font-size: 0.95rem;
+    font-style: italic;
+    opacity: 0.75;
+  }
+  
+  .fiction-item-excerpt {
+    margin: 22px 0 0;
+    font-size: 1rem;
+    line-height: 1.75;
+    opacity: 0.9;
+  }
+  
+  .fiction-item-link {
+    display: inline-block;
+    margin-top: 28px;
+    padding: 0.75rem 1.7rem;
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    border-radius: 999px;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-size: 0.82rem;
+    transition: background 0.25s ease, transform 0.25s ease;
+  }
+  
+  .fiction-item-link:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateY(-1px);
+  }
+  
+  /* Mobile */
+  @media (max-width: 900px) {
+    .fiction-page {
+      padding: 110px 24px 48px;
+    }
+  
+    .fiction-list {
+      gap: 80px;
+    }
+  
+    .fiction-item,
+    .fiction-item.reverse {
+      grid-template-columns: 1fr;
+      gap: 28px;
+    }
+  
+    .fiction-item.reverse .fiction-item-imageWrap,
+    .fiction-item.reverse .fiction-item-content {
+      order: initial;
+    }
+  
+    .fiction-item-content {
+      max-width: 100%;
+    }
+  
+    .fiction-item-title {
+      font-size: clamp(1.8rem, 8vw, 3rem);
+    }
+  
+    .fiction-item-excerpt {
+      font-size: 0.98rem;
+      line-height: 1.65;
+    }
+  }
