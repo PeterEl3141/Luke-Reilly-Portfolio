@@ -1,5 +1,5 @@
 import "./Films.css";
-import MoviePoster from "../../components/MoviePoster/MoviePoster.jsx";
+import MoviePoster from "../../components/moviePoster/moviePoster.jsx";
 import filmsData from "../../data/filmsData";
 
 const films = [
