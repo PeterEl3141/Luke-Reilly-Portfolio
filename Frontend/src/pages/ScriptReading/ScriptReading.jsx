@@ -15,7 +15,7 @@ const ScriptReading = () => {
         <div className="script-reading-text">
           <p className="script-reading-kicker">Script Reading</p>
 
-          <h1 className="script-reading-title">
+          <h1 className="script-reading-subheading">
             Thoughtful feedback for screenwriters, filmmakers, and works in
             progress.
           </h1>

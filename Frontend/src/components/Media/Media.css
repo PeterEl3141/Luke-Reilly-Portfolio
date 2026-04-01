@@ -1,0 +1,174 @@
+.media {
+    display: grid;
+    grid-template-columns: 180px 1fr;
+    gap: 40px;
+    max-width: 1000px;
+    margin-top: 72px;
+    align-items: start;
+  }
+  
+  .media-left {
+    position: relative;
+  }
+  
+  .media-thumbnails {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    max-height: 520px;
+    overflow-y: auto;
+    padding-right: 8px;
+  }
+  
+  .media-thumbnails::-webkit-scrollbar {
+    width: 6px;
+  }
+  
+  .media-thumbnails::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.22);
+  }
+  
+  .media-thumbnails::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  .media-thumbnailButton {
+    position: relative;
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    background: transparent;
+    padding: 0;
+    cursor: pointer;
+    overflow: hidden;
+    transition: transform 0.25s ease, border-color 0.25s ease, opacity 0.25s ease;
+    opacity: 0.55;
+  }
+  
+  .media-thumbnailButton:hover {
+    opacity: 0.85;
+    transform: translateY(-2px);
+  }
+  
+  .media-thumbnailButton.active {
+    border-color: white;
+    opacity: 1;
+    transform: scale(1.02);
+    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.4);
+  }
+  
+  .media-thumbnailImage {
+    width: 100%;
+    height: 110px;
+    object-fit: cover;
+    display: block;
+    filter: grayscale(20%);
+    transition: filter 0.25s ease, transform 0.25s ease;
+  }
+  
+  .media-thumbnailButton:hover .media-thumbnailImage,
+  .media-thumbnailButton.active .media-thumbnailImage {
+    filter: grayscale(0%);
+    transform: scale(1.03);
+  }
+  
+  .media-thumbnailOverlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.28);
+    transition: background 0.25s ease;
+    pointer-events: none;
+  }
+  
+  .media-thumbnailButton.active .media-thumbnailOverlay {
+    background: rgba(0, 0, 0, 0.05);
+  }
+  
+  .media-right {
+    min-height: 320px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .media-content {
+    max-width: 720px;
+  }
+  
+  .media-kicker {
+    margin: 0 0 14px;
+    font-size: 0.78rem;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    opacity: 0.55;
+  }
+  
+  .media-title {
+    margin: 0 0 20px;
+    font-size: clamp(1.8rem, 3vw, 3.2rem);
+    font-weight: 500;
+    line-height: 1.08;
+    letter-spacing: 0.03em;
+  }
+  
+  .media-excerpt {
+    margin: 0 0 28px;
+    font-size: 1.05rem;
+    line-height: 1.8;
+    opacity: 0.88;
+    max-width: 640px;
+  }
+  
+  .media-button {
+    display: inline-block;
+    padding: 12px 22px;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-size: 0.82rem;
+    transition: background 0.25s ease, color 0.25s ease, border-color 0.25s ease;
+  }
+  
+  .media-button:hover {
+    background: white;
+    color: black;
+    border-color: white;
+  }
+  
+  /* Tablet / mobile */
+  @media (max-width: 800px) {
+    .media {
+      grid-template-columns: 1fr;
+      gap: 28px;
+      margin-top: 56px;
+    }
+  
+    .media-thumbnails {
+      flex-direction: row;
+      overflow-x: auto;
+      overflow-y: hidden;
+      max-height: none;
+      padding-right: 0;
+      padding-bottom: 6px;
+    }
+  
+    .media-thumbnailButton {
+      flex: 0 0 140px;
+    }
+  
+    .media-thumbnailImage {
+      height: 90px;
+    }
+  
+    .media-right {
+      min-height: auto;
+    }
+  
+    .media-title {
+      font-size: clamp(1.5rem, 8vw, 2.4rem);
+    }
+  
+    .media-excerpt {
+      font-size: 1rem;
+      line-height: 1.7;
+    }
+  }

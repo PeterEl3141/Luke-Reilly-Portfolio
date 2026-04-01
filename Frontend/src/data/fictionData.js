@@ -1,5 +1,31 @@
 const fictionData = [
     {
+        slug: "interval",
+        title: "Interval",
+        genre: "Ghost Story",
+        medium: "//Featured in the Short Story Collection",
+        publication: "BUOY",
+        excerpt:
+        "This collection of 11 short stories responding to the theme Carnival at the End of the World was guest edited by Harper Walton. \n People metamorphose into birds, vows of silence become clown eras, hallucinogenic visions are plentiful, language and form disintegrates and evolves, drugs unlock psychogeography, sex and gender fluctuate and threaten to explode, bodies open and close, toilet queues stretch on for infinity, and streams of consciousness are polluted.",
+        link: "https://buoypress.sumupstore.com/product/carnival-at-the-end-of-the-world",
+        linkLabel: "View Collection",
+        image: "/images/carnival.png",
+        date: "2023",
+      },
+      {
+        slug: "fag-break",
+        title: "Fag Break",
+        genre: "Flash Fiction",
+        medium: "//Short Story",
+        publication: "Literary Magazine",
+        excerpt:
+          "A meek and graceful man dressed in a loose-fitting suit paces across the roof of the Four Seasons hotel. He smokes a cigarette and watches the Seoul skyline. He inhales. Beneath his skin, the smoke stains his lungs, thickens the blood. Marking the slow, imperceptible wearing away of his being. The burden of an entire species hangs on his slight shoulders.",
+        link: "https://inksweatandtears.co.uk/on-national-flash-fiction-day-luke-reilly/",
+        linkLabel: "Read Piece",
+        image: "/images/ink.png",
+        date: "2024",
+      },
+    {
       slug: "medium-piece",
       title: "Nobody puts Cady in the Corner: Villainous Bouncebackability in the Age of Trump 2.0",
       genre: "Non-Fiction",
@@ -10,19 +36,6 @@ const fictionData = [
       link: "https://medium.com/@EubulusKane/nobody-puts-cady-in-the-corner-villainous-bouncebackability-in-the-age-of-trump-2-0-a6e03d5e7c36",
       linkLabel: "Read Article",
       image: "/images/cady.webp",
-      date: "2024",
-    },
-    {
-      slug: "wordpress-article",
-      title: "Sublime Slapstick: The Divine Comedy of Andrei Tarkovsky",
-      genre: "Non-Fiction",
-      medium: "//Essay",
-      publication: "Published on Medium",
-      excerpt:
-        "So, what is the purpose of Tarkovsky’s surprising indulgences into often slightly lame sight-gags? Is it simply comic relief? A way to break up the notoriously slow pace of his masterworks? Anyone who has experienced a full runtime of his will know the high priest of Cinema had absolute no time for such blasphemies of ‘keeping the audience engaged’, ‘entertainment’ or, most sinful of all, ‘plot.’",
-      link: "https://medium.com/@EubulusKane/sublime-slapstick-the-mistakes-of-a-maestro-c66becda1f86",
-      linkLabel: "Read Article",
-      image: "/images/tarkovsky.webp",
       date: "2024",
     },
     {
@@ -39,33 +52,25 @@ const fictionData = [
       image: "/images/nomorenight.webp",
       date: "2023",
     },
-    {
-      slug: "interval",
-      title: "Interval",
-      genre: "Ghost Story",
-      medium: "//Featured in the Short Story Collection",
-      publication: "BUOY",
-      excerpt:
-      "This collection of 11 short stories responding to the theme Carnival at the End of the World was guest edited by Harper Walton. \n People metamorphose into birds, vows of silence become clown eras, hallucinogenic visions are plentiful, language and form disintegrates and evolves, drugs unlock psychogeography, sex and gender fluctuate and threaten to explode, bodies open and close, toilet queues stretch on for infinity, and streams of consciousness are polluted.",
-      link: "https://buoypress.sumupstore.com/product/carnival-at-the-end-of-the-world",
-      linkLabel: "View Collection",
-      image: "/images/carnival.png",
-      date: "2023",
-    },
-    {
-      slug: "fag-break",
-      title: "Fag Break",
-      genre: "Flash Fiction",
-      medium: "//Short Story",
-      publication: "Literary Magazine",
-      excerpt:
-        "A meek and graceful man dressed in a loose-fitting suit paces across the roof of the Four Seasons hotel. He smokes a cigarette and watches the Seoul skyline. He inhales. Beneath his skin, the smoke stains his lungs, thickens the blood. Marking the slow, imperceptible wearing away of his being. The burden of an entire species hangs on his slight shoulders.",
-      link: "https://inksweatandtears.co.uk/on-national-flash-fiction-day-luke-reilly/",
-      linkLabel: "Read Piece",
-      image: "/images/ink.png",
-      date: "2024",
-    },
+    
     
   ];
   
   export default fictionData;
+
+
+  /*{
+    slug: "wordpress-article",
+    title: "Sublime Slapstick: The Divine Comedy of Andrei Tarkovsky",
+    genre: "Non-Fiction",
+    medium: "//Essay",
+    publication: "Published on Medium",
+    excerpt:
+      "So, what is the purpose of Tarkovsky’s surprising indulgences into often slightly lame sight-gags? Is it simply comic relief? A way to break up the notoriously slow pace of his masterworks? Anyone who has experienced a full runtime of his will know the high priest of Cinema had absolute no time for such blasphemies of ‘keeping the audience engaged’, ‘entertainment’ or, most sinful of all, ‘plot.’",
+    link: "https://medium.com/@EubulusKane/sublime-slapstick-the-mistakes-of-a-maestro-c66becda1f86",
+    linkLabel: "Read Article",
+    image: "/images/tarkovsky.webp",
+    date: "2024",
+  },
+
+  */

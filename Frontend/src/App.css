@@ -22,7 +22,47 @@ body,
 #root {
   width: 100%;
   height: 100%;
-  --accent-color: #f5c84b;  
+  --accent-color: #00eff8;  
+
+  --scribble-height: 10px;
+  --scribble-offset: -7px;
+  --scribble-left-pad: 2px;
+  --scribble-right-pad: 4px;
+  --scribble-reveal-speed: 0.28s;
+}
+
+.hand-drawn-underline {
+  position: relative;
+  display: inline-block;
+}
+
+.hand-drawn-underline::after {
+  content: "";
+  position: absolute;
+  left: calc(-1 * var(--scribble-left-pad));
+  bottom: var(--scribble-offset);
+  width: calc(100% + var(--scribble-left-pad) + var(--scribble-right-pad));
+  height: var(--scribble-height);
+  pointer-events: none;
+  opacity: 0.95;
+
+  background:
+    radial-gradient(130% 95% at 6% 100%,
+      transparent 55%,
+      var(--accent-color) 56% 60%,
+      transparent 61%) 0 0 / 100% 100% no-repeat,
+    radial-gradient(120% 88% at 68% 100%,
+      transparent 58%,
+      var(--accent-color) 59% 63%,
+      transparent 64%) 0 1px / 100% 100% no-repeat,
+    radial-gradient(140% 80% at 38% 100%,
+      transparent 60%,
+      var(--accent-color) 61% 64%,
+      transparent 65%) 0 2px / 100% 100% no-repeat;
+
+  transform: scaleX(0);
+  transform-origin: left center;
+  transition: transform var(--scribble-reveal-speed) ease;
 }
 
 /* ---------- Base Typography ---------- */

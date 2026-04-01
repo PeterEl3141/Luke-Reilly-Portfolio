@@ -1,0 +1,145 @@
+/* Wrapper positioned by moviePoster.css */
+.squiggle-button-wrapper {
+    position: absolute;
+    z-index: 3;
+  }
+  
+  /* Main component */
+  .squiggle-button {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  
+    --sb-art-width: 800px;
+    --sb-art-height: 250px;
+  }
+  
+  /* Squiggle artwork container */
+  .squiggle-button__art {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: var(--sb-art-width);
+    height: var(--sb-art-height);
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    pointer-events: none;
+    z-index: 1;
+  }
+  
+  /* Both squiggle layers */
+  .squiggle-button__art-layer {
+    position: absolute;
+    inset: 0;
+  }
+  
+  .squiggle-button__art-layer img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+    display: block;
+    user-select: none;
+    pointer-events: none;
+  }
+  
+  /* Hover squiggle (muted version) */
+  .squiggle-button__art-layer--base {
+    opacity: 0;
+    transition: opacity 220ms ease;
+  }
+  
+  .squiggle-button__art-layer--base img {
+    filter: brightness(0.18) saturate(0.3);
+    opacity: 0.38;
+  }
+  
+  /* Show muted squiggle on hover */
+  .movie-poster:hover .squiggle-button__art-layer--base,
+  .squiggle-button:hover .squiggle-button__art-layer--base {
+    opacity: 1;
+  }
+  
+  /* Click squiggle (natural PNG color) */
+  .squiggle-button__art-layer--accent {
+    clip-path: inset(0 100% 0 0);
+    opacity: 1;
+  }
+  
+  .squiggle-button.is-animating .squiggle-button__art-layer--accent {
+    animation: squiggle-reveal 320ms ease-out forwards;
+  }
+  
+  /* Reveal animation */
+  @keyframes squiggle-reveal {
+    from {
+      clip-path: inset(0 100% 0 0);
+    }
+    to {
+      clip-path: inset(0 0 0 0);
+    }
+  }
+  
+  /* Button styling */
+  .squiggle-button__button {
+    position: relative;
+    z-index: 2;
+  
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  
+    min-width: 72px;
+    padding: 0.45rem 1rem;
+  
+    background: transparent;
+  
+    border: 0.5px solid rgba(255, 255, 255, 0.8);
+    color: white;
+  
+    font: inherit;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    line-height: 1;
+    white-space: nowrap;
+  
+    cursor: pointer;
+  
+    transition:
+      border-color 180ms ease,
+      color 180ms ease,
+      background 180ms ease,
+      backdrop-filter 180ms ease;
+  }
+  
+  /* Label above background layer */
+  .squiggle-button__label {
+    position: relative;
+    z-index: 1;
+  }
+  
+  /* Hover state (button becomes darker / neutralized) */
+  .squiggle-button__button:hover,
+  .squiggle-button__button:focus-visible {
+    border-color: var(--accent-color);
+    color: var(--accent-color);
+  
+    background: rgba(10, 10, 10, 0.72);
+  
+    backdrop-filter: blur(3px) grayscale(1);
+    -webkit-backdrop-filter: blur(3px) grayscale(1);
+  
+    outline: none;
+  }
+  
+  /* Keep same darker state during click animation */
+  .squiggle-button.is-animating .squiggle-button__button {
+    border-color: var(--accent-color);
+    color: var(--accent-color);
+  
+    background: rgba(8, 8, 8, 0.82);
+  
+    backdrop-filter: blur(3px) grayscale(1);
+    -webkit-backdrop-filter: blur(3px) grayscale(1);
+  }

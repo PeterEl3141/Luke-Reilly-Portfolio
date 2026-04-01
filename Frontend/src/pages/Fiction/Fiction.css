@@ -33,10 +33,13 @@
   }
   
   .fiction-item {
+    position: relative;
+    isolation: isolate;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 56px;
     align-items: center;
+    overflow: visible;
   }
   
   .fiction-item.reverse .fiction-item-imageWrap {
@@ -48,6 +51,8 @@
   }
   
   .fiction-item-imageWrap {
+    position: relative;
+    z-index: 2;
     overflow: hidden;
   }
   
@@ -63,6 +68,8 @@
   }
   
   .fiction-item-content {
+    position: relative;
+    z-index: 3;
     max-width: 540px;
   }
   

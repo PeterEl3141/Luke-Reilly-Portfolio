@@ -1,0 +1,13 @@
+.trailer-video {
+    width: 100%;
+  }
+  
+  .trailer-video__player {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    height: auto;
+    border-radius: 18px;
+    background: #000;
+    object-fit: cover;
+  }

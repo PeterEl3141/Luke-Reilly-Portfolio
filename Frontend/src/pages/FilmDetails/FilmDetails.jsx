@@ -2,6 +2,8 @@ import "./FilmDetails.css";
 import { useParams } from "react-router-dom";
 import { motion } from "framer-motion";
 import filmsData from "../../data/filmsData";
+import Media from "../../components/Media/Media";
+import TrailerVideo from "../../components/TrailerVideo/TrailerVideo";
 
 const metadataContainerVariants = {
   hidden: {},
@@ -121,6 +123,20 @@ const FilmDetails = () => {
         <p>{film.description}</p>
       </motion.div>
 
+      {film.trailer?.cloudflareId && (
+        <motion.div
+          className="film-details-trailerWrap"
+          initial={{ opacity: 0, y: 24 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.45, ease: "easeOut" }}
+        >
+          <TrailerVideo
+            cloudflareId={film.trailer.cloudflareId}
+            poster={film.trailer.poster || film.image}
+          />
+        </motion.div>
+      )}
+
       <motion.div
         className="film-details-imageWrap"
         initial={{ opacity: 0, scale: 1.02 }}
@@ -133,6 +149,8 @@ const FilmDetails = () => {
           className="film-details-image"
         />
       </motion.div>
+
+      <Media media={film.media} filmTitle={film.title} />
     </section>
   );
 };

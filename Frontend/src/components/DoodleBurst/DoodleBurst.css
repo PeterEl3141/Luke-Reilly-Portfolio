@@ -1,0 +1,76 @@
+.doodleBurst {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  overflow: visible;
+
+  /* main placement control */
+  left: 14%;
+}
+
+.doodleBurst-layer {
+  position: absolute;
+  top: 54%;
+  left: 68%;
+
+  width: min(950px, 77vw);
+  height: auto;
+  display: block;
+  opacity: 0;
+
+  mix-blend-mode: screen;
+
+  /* makes the motion feel like it fans out from behind him */
+  transform-origin: 58% 55%;
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* left cluster */
+.doodleBurst-layer1 {
+  animation: doodleSweep1 0.45s 0.02s forwards;
+}
+
+/* top cluster */
+.doodleBurst-layer2 {
+  animation: doodleSweep2 0.45s 0.14s forwards;
+}
+
+/* right cluster */
+.doodleBurst-layer3 {
+  animation: doodleSweep3 0.65s 0.26s forwards;
+}
+
+@keyframes doodleSweep1 {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -50%) rotate(-22deg) translateX(-55px) translateY(8px) scale(0.94);
+  }
+  to {
+    opacity: 0.5;
+    transform: translate(-50%, -50%) rotate(0deg) translateX(0) translateY(0) scale(1);
+  }
+}
+
+@keyframes doodleSweep2 {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -50%) rotate(-16deg) translateX(-45px) translateY(-10px) scale(0.95);
+  }
+  to {
+    opacity: 0.5;
+    transform: translate(-50%, -50%) rotate(0deg) translateX(0) translateY(0) scale(1);
+  }
+}
+
+@keyframes doodleSweep3 {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -50%) rotate(-10deg) translateX(-35px) translateY(4px) scale(0.97);
+  }
+  to {
+    opacity: 0.5;
+    transform: translate(-50%, -50%) rotate(0deg) translateX(0) translateY(0) scale(1);
+  }
+}

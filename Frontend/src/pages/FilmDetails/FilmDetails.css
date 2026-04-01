@@ -71,7 +71,7 @@
   }
   
   .film-details-imageWrap {
-    max-width: 1000px;
+    max-width: 900px;
   }
   
   .film-details-image {
@@ -89,6 +89,11 @@
   .not-found h1 {
     font-size: 2rem;
     font-weight: 500;
+  }
+
+  .film-details-trailerWrap {
+    margin: 3rem 0;
+    max-width: 900px;
   }
   
   /* Mobile */

@@ -1,5 +1,6 @@
 import "./moviePoster.css";
 import DoodleButton from "../DoodleButton/DoodleButton.jsx";
+import SquiggleButton from "../SquiggleButton/SquiggleButton.jsx";
 
 const MoviePoster = ({ title, subheading, image, link, buttonText = "View" }) => {
   return (
@@ -11,13 +12,16 @@ const MoviePoster = ({ title, subheading, image, link, buttonText = "View" }) =>
           <h2 className="movie-poster-title">{title}</h2>
           <p className="movie-poster-subheading">{subheading}</p>
         </div>
-
-        <DoodleButton to={link} className="movie-poster-button">
-          {buttonText}
-        </DoodleButton>
+        <SquiggleButton to={link} className="movie-poster-button">
+  {buttonText}
+</SquiggleButton>   
+                
       </div>
     </article>
   );
 };
-
+/*<DoodleButton to={link} className="movie-poster-button">
+          {buttonText}
+        </DoodleButton>
+        */
 export default MoviePoster;

@@ -22,18 +22,19 @@
   
   .script-reading-kicker {
     margin: 0 0 18px;
-    font-size: 0.9rem;
+    font-size: clamp(3rem, 7vw, 6rem);
     text-transform: uppercase;
     letter-spacing: 0.12em;
-    opacity: 0.6;
+    opacity: 1;
   }
   
-  .script-reading-title {
+  .script-reading-subheading {
     margin: 0;
-    font-size: clamp(2.4rem, 5vw, 5rem);
+    font-size: 2rem;
     line-height: 1.02;
     font-weight: 500;
     letter-spacing: 0.02em;
+    opacity: 0.8;
   }
   
   .script-reading-intro {

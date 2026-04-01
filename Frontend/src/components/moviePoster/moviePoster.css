@@ -83,6 +83,26 @@
   }
   
   /* Button */
+
+  .squiggle-button-wrapper.movie-poster-button {
+    position: absolute;
+    left: 50%;
+    bottom: 8%;
+    transform: translateX(-50%) translateY(10px);
+    opacity: 1;
+    z-index: 3;
+  
+    transition:
+      opacity 0.35s ease 0.1s,
+      transform 0.35s ease 0.1s;
+  }
+  
+  .movie-poster:hover .squiggle-button-wrapper.movie-poster-button {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
+
+ /* old button styling for doodle button
   .doodle-button.movie-poster-button {
     position: absolute;
     left: 50%;
@@ -118,3 +138,5 @@
     opacity: 1;
     transform: translateX(-50%) translateY(0);
   }
+
+  */

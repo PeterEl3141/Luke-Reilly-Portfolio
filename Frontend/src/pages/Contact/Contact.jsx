@@ -1,5 +1,6 @@
 import "./Contact.css";
 import { motion } from "framer-motion";
+import ContactForm from "../../components/ContactForm/ContactForm";
 
 const Contact = () => {
   return (
@@ -87,7 +88,9 @@ const Contact = () => {
           </div>
         </motion.div>
       </div>
+      <ContactForm />
     </section>
+    
   );
 };
 
