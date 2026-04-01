@@ -86,10 +86,10 @@ const ScriptReading = () => {
         transition={{ duration: 0.7, ease: "easeOut", delay: 0.1 }}
       >
         <blockquote>
-          “Luke’s feedback was rigorous, generous, and incredibly precise. He
-          helped me understand not just what wasn’t working, but why.”
+        "Luke provided the kind of feedback you can only get from someone who’s a talented screenwriter themselves. It can often seem like readers aren’t meeting you at your level, and don’t truly make the effort to understand your material - but that was far from my experience here. Luke doesn’t just try to transform your work, but has made the painstaking effort to consider it from as many angles as possible, in the hopes of getting you closer to something you’re happy with. This industry direly needs more talented artists like Luke doing this work!"
+
         </blockquote>
-        <p>— Writer / Director</p>
+        <p>Alex Fernandes, Script Consultant, Producer, Screenwriter</p>
       </motion.div>
     </section>
   );
