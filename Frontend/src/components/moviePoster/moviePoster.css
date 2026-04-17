@@ -11,7 +11,7 @@
     position: absolute;
     inset: 0;
     width: 100%;
-    height: 100%;
+    height: 100%; 
     object-fit: cover;
     display: block;
     z-index: 0;
@@ -100,6 +100,88 @@
   .movie-poster:hover .squiggle-button-wrapper.movie-poster-button {
     opacity: 1;
     transform: translateX(-50%) translateY(0);
+  }
+
+
+  .movie-poster-accolades {
+    position: absolute;
+    top: 50%;
+    left: 3%;
+    transform: translateY(-50%);
+    z-index: 3;
+  
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    backdrop-filter: blur(6px);
+  }
+  
+  .movie-poster-accolade {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 140px;
+  
+    opacity: 0.75; /* subtle transparency */
+    transition: opacity 0.3s ease;
+  }
+  
+  .movie-poster-accolade:hover {
+    opacity: 1;
+  }
+  
+  .movie-poster-accolade-image {
+    width: 90px;
+    height: auto;
+    object-fit: contain;
+    display: block;
+  
+    border-radius: 8px; /* 👈 softer corners */
+    margin-bottom: 0.4rem;
+  
+    background: rgba(255, 255, 255, 0.05); /* subtle lift */
+    padding: 4px;
+  }
+  
+  .movie-poster-accolade-label {
+    margin: 0;
+    font-size: 0.65rem;
+    line-height: 1.3;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  
+    color: white;
+    opacity: 0.7; /* 👈 softer text */
+  }
+
+
+
+  @media (max-width: 800px) {
+    .movie-poster-accolades {
+      top: auto;
+      bottom: 22%;
+      left: 50%;
+      transform: translateX(-50%);
+  
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+    }
+  
+    .movie-poster-accolade {
+      align-items: center;
+      max-width: 100px;
+    }
+  
+    .movie-poster-accolade-image {
+      width: 70px;
+    }
+  
+    .movie-poster-accolade-label {
+      font-size: 0.6rem;
+      text-align: center;
+    }
   }
 
  /* old button styling for doodle button

@@ -26,18 +26,16 @@ const fictionData = [
         date: "2024",
       },
     {
-      slug: "medium-piece",
-      title: "Nobody puts Cady in the Corner: Villainous Bouncebackability in the Age of Trump 2.0",
-      genre: "Non-Fiction",
-      medium: "//Essay",
-      publication: "Published on Medium",
-      excerpt:
-        "Somewhat ironically, given their propensity for violence, cinema’s bad guys are subject to a strict rule of law. Chief among them is the famous ‘Principle of Evil Marksmanship,’ wherein foot soldiers of the dastardly overlord consistently miss their targets, Stormtroopers and Indiana Jones Nazis being the main culprits here. Then there is ‘the less is more’ rule when it comes to framing an onscreen monster; the less you show of your hideous beast, whether it be Xenomorph, Yautja or the Thing, the scarier it will become. A undiscussed principle, however, is that of villainous bouncebackability; the narrative benefits of making your bad guy exceedingly hard to kill.",
-      link: "https://medium.com/@EubulusKane/nobody-puts-cady-in-the-corner-villainous-bouncebackability-in-the-age-of-trump-2-0-a6e03d5e7c36",
-      linkLabel: "Read Article",
-      image: "/images/cady.webp",
-      date: "2024",
+      slug: "cat-food",
+      title: "Cat Food",
+      genre: "Fiction",
+      medium: "//Short Fiction",
+      publication: "Published as Part of an Email Subscription Service Showcasing the Work of Up and Coming Writers: Campfire 17",
+      
+      image: "/images/cat-food.png",
+      date: "2025",
     },
+    
     {
       slug: "xyz-collection",
       title: "Ghost Watch: An Analysis of Eleonore Weber’s ‘There Will Be No More Night’",
@@ -74,3 +72,17 @@ const fictionData = [
   },
 
   */
+
+  /*{
+      slug: "medium-piece",
+      title: "Nobody puts Cady in the Corner: Villainous Bouncebackability in the Age of Trump 2.0",
+      genre: "Non-Fiction",
+      medium: "//Essay",
+      publication: "Published on Medium",
+      excerpt:
+        "Somewhat ironically, given their propensity for violence, cinema’s bad guys are subject to a strict rule of law. Chief among them is the famous ‘Principle of Evil Marksmanship,’ wherein foot soldiers of the dastardly overlord consistently miss their targets, Stormtroopers and Indiana Jones Nazis being the main culprits here. Then there is ‘the less is more’ rule when it comes to framing an onscreen monster; the less you show of your hideous beast, whether it be Xenomorph, Yautja or the Thing, the scarier it will become. A undiscussed principle, however, is that of villainous bouncebackability; the narrative benefits of making your bad guy exceedingly hard to kill.",
+      link: "https://medium.com/@EubulusKane/nobody-puts-cady-in-the-corner-villainous-bouncebackability-in-the-age-of-trump-2-0-a6e03d5e7c36",
+      linkLabel: "Read Article",
+      image: "/images/cady.webp",
+      date: "2024",
+    },*/

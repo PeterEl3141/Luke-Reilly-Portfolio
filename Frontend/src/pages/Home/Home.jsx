@@ -8,10 +8,16 @@ const Home = () => {
   return (
     <section className="home">
       <div className="home-inner">
-        <div className="home-titleRow" aria-hidden="true">
-          <div className="home-L">L</div>
-          <h1 className="home-name">UKE REILLY</h1>
+      <div className="home-titleRow" aria-hidden="true">
+        <div className="home-nameWrap">
+          <h1 className="home-name">Luke Reilly</h1>
+          <img
+            className="home-nameUnderline"
+            src="/images/underline.png"
+            alt=""
+          />
         </div>
+      </div>
 
         {/*doodleburst*/}
         <DoodleBurst />

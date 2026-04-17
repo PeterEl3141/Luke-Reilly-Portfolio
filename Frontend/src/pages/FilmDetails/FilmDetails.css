@@ -3,6 +3,7 @@
     background: black;
     color: white;
     padding: 140px 48px 64px;
+    overflow: hidden;
   }
   
   .film-details-header {
@@ -95,7 +96,49 @@
     margin: 3rem 0;
     max-width: 900px;
   }
+
+  .film-details-accolades {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+    align-items: center;
+    margin: 0 0 40px;
+    max-width: 1000px;
+  }
   
+  .film-details-accolade-image {
+    height: 72px;
+    width: auto;
+    object-fit: contain;
+    display: block;
+    opacity: 0.75;
+    border-radius: 5px;
+  }
+
+
+
+  .film-details {
+    position: relative; /* 👈 REQUIRED */
+  }
+  
+  .film-details-marginalia {
+    position: absolute;
+    top: 180px;      /* tweak this */
+    right: 40px;     /* distance from edge */
+  
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  
+    pointer-events: none;
+  }
+  
+  .film-details-marginalia img {
+    width: clamp(220px, 16vw, 320px); /* 👈 much bigger */
+    height: auto;
+  
+    opacity: 0.18; /* 👈 way more visible */
+  }
   /* Mobile */
   @media (max-width: 800px) {
     .film-details {
@@ -110,5 +153,14 @@
     .film-details-description p {
       font-size: 1rem;
       line-height: 1.65;
+    }
+
+    .film-details-accolades {
+      gap: 14px;
+      margin-bottom: 32px;
+    }
+    
+    .film-details-accolade-image {
+      height: 56px;
     }
   }

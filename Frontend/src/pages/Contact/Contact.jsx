@@ -6,14 +6,35 @@ const Contact = () => {
   return (
     <section className="contact-page">
       <motion.div
-        className="contact-header"
-        initial={{ opacity: 0, y: 24 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.7, ease: "easeOut" }}
-      >
-        <p className="contact-kicker">Contact</p>
-        <h1 className="contact-title">Luke Reilly</h1>
-      </motion.div>
+  className="contact-header"
+  initial={{ opacity: 0, y: 24 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.7, ease: "easeOut" }}
+>
+  <div className="contact-header-inner">
+    
+    {/* LEFT: text */}
+    <div className="contact-header-text">
+      <p className="contact-kicker">Contact</p>
+      <h1 className="contact-title">Luke Reilly</h1>
+    </div>
+
+    {/* RIGHT: images */}
+    <div className="contact-header-images">
+      
+      <div className="contact-header-imageBlock">
+        <img src="/images/at-amaas2.jpeg" alt="At the Africa Movie Academy Awards" />
+        <p>At the Africa Movie Academy Awards (Africa's Biggest Film Festival) for Small Gods</p>
+      </div>
+
+      <div className="contact-header-imageBlock">
+        <img src="/images/sg-premier.jpeg" alt="At the Small Gods Premier" />
+        <p>At the Small God's Premier</p>
+      </div>
+
+    </div>
+  </div>
+</motion.div>
 
       <div className="contact-grid">
         <motion.div
@@ -88,7 +109,23 @@ const Contact = () => {
           </div>
         </motion.div>
       </div>
-      <ContactForm />
+      <div className="contact-form-section">
+  <div className="contact-form-wrapper">
+    <ContactForm />
+  </div>
+
+  <div className="contact-form-images">
+    <div className="contact-form-imageBlock">
+      <img src="/images/at-cff.jpeg" alt="At the Cornwall Film Festival" />
+      <p>At the Cornwall Film Festival, for Small Gods 2025</p>
+    </div>
+
+    <div className="contact-form-imageBlock">
+      <img src="/images/amaa-performance.jpeg" alt="AMAA Performance" />
+      <p>A Performance at the Africa Movie Academy Awards 2025</p>
+    </div>
+  </div>
+</div>
     </section>
     
   );

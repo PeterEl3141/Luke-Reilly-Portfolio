@@ -2,6 +2,7 @@ import "./Films.css";
 import MoviePoster from "../../components/moviePoster/moviePoster.jsx";
 import filmsData from "../../data/filmsData";
 
+/*
 const films = [
   {
     title: "SMALL GODS",
@@ -26,6 +27,8 @@ const films = [
   },
 ];
 
+*/
+
 const Films = () => {
   return (
     <section className="films-page">
@@ -37,6 +40,7 @@ const Films = () => {
         image={film.image}
         link={`/films/${film.slug}`}
         buttonText="View"
+        accolades={film.accolades}
       />
       ))}
     </section>

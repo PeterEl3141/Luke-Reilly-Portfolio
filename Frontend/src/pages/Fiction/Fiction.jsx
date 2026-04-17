@@ -28,11 +28,21 @@ const Fiction = () => {
   return (
     <section className="fiction-page">
       <div className="fiction-header">
-        <h1 className="fiction-page-title">Fiction</h1>
-        <p className="fiction-page-intro">
-          A selection of short fiction, essays, and longer-form writing.
-        </p>
-      </div>
+  <div className="fiction-title-row">
+    <h1 className="fiction-page-title">Fiction</h1>
+
+    <img
+      src="/images/mh2.png"
+      alt=""
+      className="fiction-header-marginalia"
+      aria-hidden="true"
+    />
+  </div>
+
+  <p className="fiction-page-intro">
+    A selection of short fiction, essays, and longer-form writing.
+  </p>
+</div>
 
       <div className="fiction-list">
       {fictionData.map((item, index) => {
@@ -75,13 +85,15 @@ const Fiction = () => {
 
         <p className="fiction-item-excerpt">{item.excerpt}</p>
 
-        <DoodleButton
-          href={item.link}
-          external={true}
-          className="fiction-item-link"
-        >
-          {item.linkLabel}
-        </DoodleButton>
+        {item.linkLabel && (
+  <DoodleButton
+    href={item.link}
+    external={true}
+    className="fiction-item-link"
+  >
+    {item.linkLabel}
+  </DoodleButton>
+)}
       </div>
     </motion.article>
   );

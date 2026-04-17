@@ -45,6 +45,11 @@ const FilmDetails = () => {
 
   return (
     <section className="film-details">
+      <div className="film-details-marginalia">
+  <img src="/images/mv1.png" alt="" />
+  <img src="/images/mv2.png" alt="" />
+  <img src="/images/mv4.png" alt="" /> 
+</div>
       <motion.div
         className="film-details-header"
         initial={{ opacity: 0, y: 24 }}
@@ -54,7 +59,23 @@ const FilmDetails = () => {
         <h1 className="film-details-title">{film.title}</h1>
         <p className="film-details-subheading">{film.subheading}</p>
       </motion.div>
-
+      {film.accolades && film.accolades.length > 0 && (
+        <motion.div
+          className="film-details-accolades"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.2, ease: "easeOut" }}
+        >
+          {film.accolades.map((accolade) => (
+            <img
+              key={accolade.id}
+              src={accolade.image}
+              alt={accolade.alt || ""}
+              className="film-details-accolade-image"
+            />
+          ))}
+        </motion.div>
+      )}
       <motion.div
         className="film-details-info"
         variants={metadataContainerVariants}

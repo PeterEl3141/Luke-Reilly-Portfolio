@@ -1,6 +1,43 @@
 const filmsData = [
     
+    {
+      slug: "prisoners-of-air",
+      title: "PRISONERS OF AIR",
+      subheading: "2026 TBD | Writer",
   
+      year: "2026",
+      runtime: "tbd",
+      role: "Director",
+      genre: "Exploration of Polar Exploration",
+      format: "Short Film",
+  
+      credits: "tbd",
+  
+      description:
+        "tbd",
+  
+      poster: "/images/prisoners-of-air.png",
+      image: "/images/prisoners-of-air.png",
+
+      trailer: {
+        cloudflareId: "YOUR_CLOUDFLARE_VIDEO_ID",
+        poster: "/images/prisoners-of-air.png",
+      },
+
+      accolades: [
+        {
+          id: 1,
+          image: "/images/kinolime.webp",
+          alt: "Finalist of Kinolime Script-to-Screen Feature Competition - 2026",
+          label: "Finalist . 2026"
+        }
+      ],
+
+      media: [
+        
+      ],
+    },
+    
     {
       slug: "prufrock",
       title: "THE LOVE SONG OF J. ALFRED PRUFROCK",
@@ -25,100 +62,15 @@ const filmsData = [
         poster: "/images/meat.jpg",
       },
 
+      accolades: [
+      ],
+
       media: [
-        {
-          id: 1,
-          title: "Prufrock on Screen — Translating Interior Monologue",
-          excerpt:
-            "The Lovesong of J. Alfred Prufrock reimagines T.S. Eliot’s poem as a cinematic meditation on alienation, time, and the paralysis of modern consciousness.",
-          image: "/images/lojap.jpeg",
-          link: "/articles/prufrock-review",
-          buttonText: "Read full article",
-        },
-        {
-          id: 2,
-          title: "Do I Dare? The Anxiety of Prufrock Revisited",
-          excerpt:
-            "Blending visual symbolism with poetic narration, the film explores indecision, aging, and self-doubt—bringing Eliot’s iconic figure hauntingly to life.",
-          image: "/images/lojap.jpeg",
-          link: "/articles/prufrock-themes",
-          buttonText: "Read full article",
-        },
-        {
-          id: 3,
-          title: "Measured Out in Coffee Spoons — Time and Repetition",
-          excerpt:
-            "The film captures Prufrock’s fractured sense of time through looping imagery and restrained pacing, echoing the monotony of modern existence.",
-          image: "/images/lojap.jpeg",
-          link: "/articles/prufrock-time",
-          buttonText: "Read full article",
-        },
-        {
-          id: 4,
-          title: "Faces That You Meet — Society and Self-Consciousness",
-          excerpt:
-            "Through crowded interiors and isolating compositions, the adaptation visualizes Prufrock’s fear of judgment and the suffocating weight of social perception.",
-          image: "/images/lojap.jpeg",
-          link: "/articles/prufrock-society",
-          buttonText: "Read full article",
-        },
+       
       ],
     },
   
-    {
-        slug: "meat",
-        title: "MEAT",
-        subheading: "2021 · 93 min | Writer / Co-Director / Editing / Sound",
-      
-        year: "2021",
-        runtime: "93 min",
-        role: "Writer / Director",
-        genre: "Drama / Thriller",
-        format: "Feature Film",
-      
-        credits: "Produced by Production Company",
-      
-        description:
-          "A short description of the film. This can describe the premise, thematic concerns, or notable collaborators involved in the project.",
-      
-        poster: "/images/meat.png",
-        image: "/images/meat.png",
 
-        trailer: {
-            cloudflareId: "2dba4932447ad0a3dafe3d94808f1939",
-            poster: "/images/meat.png",
-          },
-      
-        media: [
-          {
-            id: 1,
-            title: "MEAT Review — A Tense and Unflinching Debut",
-            excerpt:
-              "A stark and tightly controlled drama, MEAT explores violence, masculinity, and moral collapse with impressive visual restraint and emotional force.",
-            image: "/images/meat.png",
-            link: "/articles/meat-review",
-            buttonText: "Read full article",
-          },
-          {
-            id: 2,
-            title: "Inside the Making of MEAT",
-            excerpt:
-              "This behind-the-scenes feature examines the film’s stripped-back aesthetic, collaborative production process, and the decisions that shaped its atmosphere.",
-            image: "/images/meat2.png",
-            link: "/articles/inside-meat",
-            buttonText: "Read full article",
-          },
-          {
-            id: 3,
-            title: "Why MEAT Lingers",
-            excerpt:
-              "Part character study, part psychological thriller, the film leaves a lasting impression through its sparse dialogue and unsettling tone.",
-            image: "/images/meat.png",
-            link: "",
-            buttonText: "Read full article",
-          },
-        ],
-      },
     {
         slug: "small-gods",
         title: "SMALL GODS",
@@ -142,23 +94,57 @@ const filmsData = [
             cloudflareId: "c049d08d9ed0cf843851dab095d0fc10",
             poster: "/images/small-gods.png",
           },
+
+          accolades: [
+            {
+              id: 1,
+              image: "/images/cff.webp",
+              alt: "Winner - Best Feature Film 2025",
+              label: "Winner - Best Feature Film 2025"
+            },
+            {
+              id: 2,
+              image: "/images/amaa.webp",
+              alt: "9 Nominations and Winner of Best Actress - 2025",
+              label: "9 Nominations and Winner of Best Actress - 2025"
+            },
+            {
+              id: 3,
+              image: "/images/mff.jpeg",
+              alt: "2026 Selection",
+              label: "2026 Selection"
+            },
+            {
+              id: 4,
+              image: "/images/biff.jpeg",
+              alt: "2026 Selection",
+              label: "2026 Selection"
+            },
+            {
+              id: 5,
+              image: "/images/abff.png",
+              alt: "2026 Selection",
+              label: "2026 Selection"
+            },
+          ],
+      
         
           media: [
             {
               id: 1,
-              title: "Small Gods — A Quiet Testament to Survival",
+              title: "Cornwall Film Festival",
               excerpt:
-                "Set against the backdrop of economic hardship, Small Gods captures the fragile persistence of hope in a world shaped by scarcity, dignity, and quiet resilience.",
-              image: "/images/small-gods.png",
-              link: "/articles/small-gods-review",
+                "We’re thrilled to announce the award-winning films of this edition. Congratulations to all the incredible filmmakers whose work moved, challenged, and inspired us.[...]'",
+              image: "/images/cff.webp",
+              link: "https://www.instagram.com/p/DRalF9XjPD2/?img_index=3",
               buttonText: "Read full article",
             },
             {
               id: 2,
               title: "The Human Landscape of Small Gods",
               excerpt:
-                "Through intimate storytelling and restrained performances, the film paints a deeply human portrait of poverty—one that avoids spectacle in favor of emotional truth.",
-              image: "/images/small-gods.png",
+                "Feature film focuses on the landless Batwa people of Africaʼs Great Lakes Region[...]",
+              image: "/images/screendaily2.png",
               link: "/articles/small-gods-analysis",
               buttonText: "Read full article",
             },
@@ -182,6 +168,75 @@ const filmsData = [
             },
           ],
       },
+  
+    {
+        slug: "meat",
+        title: "MEAT",
+        subheading: "2021 · 16 min | Writer / Co-Director / Editing / Sound",
+      
+        year: "2021",
+        runtime: "16 min",
+        role: "Writer / Director",
+        genre: "Drama / Thriller",
+        format: "Feature Film",
+      
+        credits: "Produced by Production Company",
+      
+        description:
+          "A short description of the film. This can describe the premise, thematic concerns, or notable collaborators involved in the project.",
+      
+        poster: "/images/meat.png",
+        image: "/images/meat.png",
+
+        trailer: {
+            cloudflareId: "2dba4932447ad0a3dafe3d94808f1939",
+            poster: "/images/meat.png",
+          },
+
+          accolades: [
+            {
+              id: 1,
+              image: "/images/amaa.webp",
+              alt: "Winner - Best Short Film 2021",
+              label: "Winner - Best Short Film 2021"
+            },
+            {
+              id: 2,
+              image: "/images/slamdance.webp",
+              alt: "Selection",
+              label: "2021 Selection"
+            },
+            {
+              id: 3,
+              image: "/images/cesar.jpg",
+              alt: "2022 Selection",
+              label: "2022 Selection"
+            },
+            {
+              id: 4,
+              image: "/images/odense.jpg",
+              alt: "2023 Selection",
+              label: "2023 Selection"
+            },
+            {
+              id: 5,
+              image: "/images/si.jpg",
+              alt: "Official Endorsement",
+              label: "Official Endorsement"
+            },
+            {
+              id: 6,
+              image: "/images/unesco.png",
+              alt: "Official Endorsement",
+              label: "Official Endorsement"
+            },
+          ],
+      
+        media: [
+          
+        ],
+      },
+    
   ];
   
   export default filmsData;

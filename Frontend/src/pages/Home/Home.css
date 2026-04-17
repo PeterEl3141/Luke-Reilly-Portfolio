@@ -32,33 +32,43 @@
   position: absolute;
   left: 0;
   bottom: 20px;
-
-  display: flex;
-  align-items: flex-end;
-
-  /* This is your “kerning” control between L and rest of name */
-  gap: 0.06em; /* try 0.04em–0.12em */
+  z-index: 3;
+  overflow: visible;
+  font-family: "Boldonse", system-ui;
 }
 
-.home-L {
-  position: static;          /* remove absolute positioning */
-  font-size: clamp(280px, 18vw, 400px);
-  line-height: 0.95;
-  font-weight: 300;
-  letter-spacing: -0.02em;
-  opacity: 0.85;
-  transform: translateY(12px);
-  margin-bottom: 42px;
+.home-nameWrap {
+  position: relative;
+  display: inline-block;
+  overflow: visible;
+  bottom: 80px;
 }
 
 .home-name {
-  position: static;          /* remove absolute positioning */
   margin: 0;
-  font-size: clamp(90px, 15vw, 130px);
+  display: block;
+  position: relative;
+  z-index: 2;
+
+  font-size: clamp(70px, 12vw, 100px);
+  line-height: 0.9;
   font-weight: 400;
   letter-spacing: -0.02em;
   opacity: 0.85;
 }
+
+.home-nameUnderline {
+  position: absolute;
+  left: 0;
+  bottom: -140px;   /* adjust this */
+  width: 100%;
+  height: auto;
+  display: block;
+  z-index: 1;
+  pointer-events: none;
+}
+
+
 
 .home-name-rest {
   display: inline-block;
@@ -98,8 +108,8 @@
 
 .home-intro {
   position: absolute;
-  right: min(65vw, 900px); /* roughly the portrait width */
-  bottom: 30vh;
+  left: 0;                /* align with title */
+  bottom: 32vh;
   width: 360px;
 }
 
