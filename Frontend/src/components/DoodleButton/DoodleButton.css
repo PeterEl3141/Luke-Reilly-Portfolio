@@ -19,6 +19,8 @@
     cursor: pointer;
     overflow: visible;
     isolation: isolate;
+
+    transition: color 0.3s ease;
   }
   
   .doodle-button-label {
@@ -52,4 +54,9 @@
   .doodle-button:hover .doodle-button-ring path {
     stroke-dashoffset: 0;
     stroke: var(--accent-color);
+    color: var(--accent-color);
+  }
+
+  .doodle-button:hover {
+    color: var(--accent-color);
   }

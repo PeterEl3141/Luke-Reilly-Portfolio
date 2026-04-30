@@ -1,7 +1,7 @@
 import "./ContactForm.css";
 import { useState } from "react";
 
-const FORMSPREE_ENDPOINT = "https://formspree.io/f/xeeparlp";
+const FORMSPREE_ENDPOINT = "https://formspree.io/f/xdabndky";
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({

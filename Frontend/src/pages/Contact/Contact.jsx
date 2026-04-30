@@ -15,13 +15,24 @@ const Contact = () => {
     
     {/* LEFT: text */}
     <div className="contact-header-text">
-      <p className="contact-kicker">Contact</p>
-      <h1 className="contact-title">Luke Reilly</h1>
-    </div>
+  <p className="contact-kicker">Contact</p>
+
+  <div className="contact-title-row">
+    <h1 className="contact-title">Luke Reilly</h1>
+
+    
+    <div className="contact-title-arrows">
+  <img src="/images/down-arrow.png" alt="" className="contact-title-arrow arrow-one" />
+  <img src="/images/down-arrow.png" alt="" className="contact-title-arrow arrow-two" />
+  <img src="/images/down-arrow.png" alt="" className="contact-title-arrow arrow-three" />
+  <img src="/images/down-arrow.png" alt="" className="contact-title-arrow arrow-four" />
+  <img src="/images/down-arrow.png" alt="" className="contact-title-arrow arrow-five" />
+</div>
+  </div>
+</div>
 
     {/* RIGHT: images */}
     <div className="contact-header-images">
-      
       <div className="contact-header-imageBlock">
         <img src="/images/at-amaas2.jpeg" alt="At the Africa Movie Academy Awards" />
         <p>At the Africa Movie Academy Awards (Africa's Biggest Film Festival) for Small Gods</p>
@@ -126,6 +137,29 @@ const Contact = () => {
     </div>
   </div>
 </div>
+
+<motion.div
+  className="contact-bottom-gallery"
+  initial={{ opacity: 0, y: 24 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  viewport={{ once: true, amount: 0.2 }}
+  transition={{ duration: 0.7, ease: "easeOut" }}
+>
+  <div className="contact-bottom-imageBlock contact-bottom-imageBlock-large">
+    <img src="/images/manchester1.jpeg" alt="Description here" />
+    <p>At the Manchester Film Festival</p>
+  </div>
+
+  <div className="contact-bottom-imageBlock">
+    <img src="/images/manchester2.jpeg" alt="Description here" />
+    <p>At the Manchester Film Festival</p>
+  </div>
+
+  <div className="contact-bottom-imageBlock">
+    <img src="/images/manchester3.jpeg" alt="Description here" />
+    <p>At the Manchester Film Festival</p>
+  </div>
+</motion.div>
     </section>
     
   );

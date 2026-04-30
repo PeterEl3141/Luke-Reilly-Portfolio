@@ -125,12 +125,10 @@
     text-transform: uppercase;
     letter-spacing: 0.08em;
     font-size: 0.82rem;
-    transition: background 0.25s ease, color 0.25s ease, border-color 0.25s ease;
+    border-radius: 999px;
   }
   
   .media-button:hover {
-    background: white;
-    color: black;
     border-color: white;
   }
   

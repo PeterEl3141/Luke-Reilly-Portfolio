@@ -1,166 +1,261 @@
 .film-details {
-    min-height: 100vh;
-    background: black;
-    color: white;
-    padding: 140px 48px 64px;
-    overflow: hidden;
-  }
+  position: relative;
+  min-height: 100vh;
+  background: black;
+  color: white;
+  padding: 140px 48px 64px;
+  overflow: hidden;
+}
+
+.film-details-header {
+  margin-bottom: 48px;
+}
+
+.film-details-title {
+  margin: 0;
+  font-size: clamp(2.5rem, 5vw, 5rem);
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  line-height: 1;
+}
+
+.film-details-subheading {
+  margin: 14px 0 0;
+  font-size: 1rem;
+  font-style: italic;
+  opacity: 0.75;
+  letter-spacing: 0.05em;
+}
+
+.film-details-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  margin-bottom: 48px;
+  max-width: 1000px;
+}
+
+.film-details-column {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.film-details-item {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.film-details-label {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  opacity: 0.55;
+}
+
+.film-details-value {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.film-details-description {
+  max-width: 760px;
+  margin-bottom: 56px;
+}
+
+.film-details-description p {
+  margin: 0;
+  font-size: 1.05rem;
+  line-height: 1.75;
+  opacity: 0.9;
+}
+
+/* shared media width */
+.film-details-imageWrap,
+.film-details-trailerWrap,
+.film-details-scriptImages {
+  max-width: 900px;
+  width: 100%;
+}
+
+.film-details-imageWrap {
+  margin: 0 0 56px;
+}
+
+.film-details-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.film-details-trailerWrap {
+  margin: 3rem 0;
+}
+
+/* accolades */
+.film-details-accolades {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  align-items: center;
+  margin: 0 0 40px;
+  max-width: 1000px;
+}
+
+.film-details-accolade-image {
+  height: 72px;
+  width: auto;
+  object-fit: contain;
+  display: block;
+  opacity: 0.75;
+  border-radius: 5px;
+}
+
+/* marginalia */
+.film-details-marginalia {
+  position: absolute;
+  top: 180px;
+  right: 40px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+
+  pointer-events: none;
+}
+
+.film-details-marginalia img {
+  width: clamp(220px, 16vw, 320px);
+  height: auto;
+  opacity: 0.18;
+}
+
+/* script images */
+.film-details-scriptImages {
+  margin: 64px 0 80px;
+}
+
+.film-details-sectionTitle {
+  margin: 0 0 28px;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-weight: 500;
+  opacity: 0.6;
+}
+
+.film-details-scriptImages .film-details-imageWrap {
+  max-width: 900px;
+  width: 100%;
+  margin: 0 0 72px;
+}
+
+.film-details-scriptImages .film-details-imageWrap:last-child {
+  margin-bottom: 0;
+}
+
+.film-details-scriptPaper {
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0; /* 👈 this fixes the offset */
+  padding: 14px;
+
+  background: rgba(255, 255, 255, 0.045);
+  border-radius: 8px;
+
+  box-shadow:
+    0 30px 90px rgba(0, 0, 0, 0.5),
+    0 0 0 1px rgba(255, 255, 255, 0.08);
+
+  transform-origin: center;
+}
+
+.film-details-scriptImages .film-details-imageWrap:nth-of-type(odd) .film-details-scriptPaper {
+  transform: rotate(-0.35deg);
+}
+
+.film-details-scriptImages .film-details-imageWrap:nth-of-type(even) .film-details-scriptPaper {
+  transform: rotate(0.35deg);
+}
+
+.film-details-scriptImage {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+  border-radius: 4px;
+}
+
+.film-details-scriptCaption {
+  margin: 12px 0 0;
+  font-size: 0.75rem;
+  line-height: 1.4;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  opacity: 0.55;
+}
+
+/* not found */
+.not-found {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.not-found h1 {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+
+.film-details-links {
+  margin-top: 28px;
+  border-radius: 999px;
+  color: white;
   
-  .film-details-header {
-    margin-bottom: 48px;
-  }
-  
-  .film-details-title {
-    margin: 0;
-    font-size: clamp(2.5rem, 5vw, 5rem);
-    font-weight: 500;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    line-height: 1;
-  }
-  
-  .film-details-subheading {
-    margin: 14px 0 0;
-    font-size: 1rem;
-    font-style: italic;
-    opacity: 0.75;
-    letter-spacing: 0.05em;
-  }
-  
-  .film-details-info {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 48px;
-    margin-bottom: 48px;
-    max-width: 1000px;
-  }
-  
-  .film-details-column {
-    display: flex;
-    flex-direction: column;
-    gap: 22px;
-  }
-  
-  .film-details-item {
-    display: flex;
-    flex-direction: column;
-    gap: 6px;
-  }
-  
-  .film-details-label {
-    font-size: 0.8rem;
-    text-transform: uppercase;
-    letter-spacing: 0.08em;
-    opacity: 0.55;
-  }
-  
-  .film-details-value {
-    font-size: 1rem;
-    line-height: 1.5;
-  }
-  
-  .film-details-description {
-    max-width: 760px;
-    margin-bottom: 56px;
-  }
-  
-  .film-details-description p {
-    margin: 0;
-    font-size: 1.05rem;
-    line-height: 1.75;
-    opacity: 0.9;
-  }
-  
-  .film-details-imageWrap {
-    max-width: 900px;
-  }
-  
-  .film-details-image {
-    width: 100%;
-    height: auto;
-    display: block;
-  }
-  
-  .not-found {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .not-found h1 {
-    font-size: 2rem;
-    font-weight: 500;
+}
+
+/* mobile */
+@media (max-width: 800px) {
+  .film-details {
+    padding: 110px 24px 40px;
   }
 
-  .film-details-trailerWrap {
-    margin: 3rem 0;
-    max-width: 900px;
+  .film-details-info {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .film-details-description p {
+    font-size: 1rem;
+    line-height: 1.65;
   }
 
   .film-details-accolades {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 18px;
-    align-items: center;
-    margin: 0 0 40px;
-    max-width: 1000px;
+    gap: 14px;
+    margin-bottom: 32px;
   }
-  
+
   .film-details-accolade-image {
-    height: 72px;
-    width: auto;
-    object-fit: contain;
-    display: block;
-    opacity: 0.75;
-    border-radius: 5px;
+    height: 56px;
   }
 
-
-
-  .film-details {
-    position: relative; /* 👈 REQUIRED */
+  .film-details-scriptImages {
+    margin: 48px 0 64px;
   }
-  
+
+  .film-details-scriptImages .film-details-imageWrap {
+    margin-bottom: 48px;
+  }
+
+  .film-details-scriptPaper {
+    padding: 8px;
+  }
+
   .film-details-marginalia {
-    position: absolute;
-    top: 180px;      /* tweak this */
-    right: 40px;     /* distance from edge */
-  
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-  
-    pointer-events: none;
+    display: none;
   }
-  
-  .film-details-marginalia img {
-    width: clamp(220px, 16vw, 320px); /* 👈 much bigger */
-    height: auto;
-  
-    opacity: 0.18; /* 👈 way more visible */
-  }
-  /* Mobile */
-  @media (max-width: 800px) {
-    .film-details {
-      padding: 110px 24px 40px;
-    }
-  
-    .film-details-info {
-      grid-template-columns: 1fr;
-      gap: 28px;
-    }
-  
-    .film-details-description p {
-      font-size: 1rem;
-      line-height: 1.65;
-    }
-
-    .film-details-accolades {
-      gap: 14px;
-      margin-bottom: 32px;
-    }
-    
-    .film-details-accolade-image {
-      height: 56px;
-    }
-  }
+}

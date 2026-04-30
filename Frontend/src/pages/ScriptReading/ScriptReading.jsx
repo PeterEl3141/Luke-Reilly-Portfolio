@@ -106,15 +106,45 @@ const ScriptReading = () => {
     viewport={{ once: true, amount: 0.2 }}
     transition={{ duration: 0.7, ease: "easeOut", delay: 0.1 }}
   >
-    <blockquote>
-      "Luke provided the kind of feedback you can only get from someone who’s a talented screenwriter themselves. It can often seem like readers aren’t meeting you at your level, and don’t truly make the effort to understand your material - but that was far from my experience here. Luke doesn’t just try to transform your work, but has made the painstaking effort to consider it from as many angles as possible, in the hopes of getting you closer to something you’re happy with. This industry direly needs more talented artists like Luke doing this work!"
-    </blockquote>
-    <p>Alex Fernandes, Script Consultant, Producer, Screenwriter</p>
+   <div className="script-reading-testimonialItem">
+  <blockquote>
+    "Luke provided the kind of feedback you can only get from someone who’s a talented screenwriter themselves. It can often seem like readers aren’t meeting you at your level, and don’t truly make the effort to understand your material - but that was far from my experience here. Luke doesn’t just try to transform your work, but has made the painstaking effort to consider it from as many angles as possible, in the hopes of getting you closer to something you’re happy with. This industry direly needs more talented artists like Luke doing this work!"
+  </blockquote>
+  <p>Alex Fernandes, Script Consultant, Producer, Screenwriter</p>
+</div>
+
+<div className="script-reading-testimonialItem">
+  <blockquote>
+    "Luke gives insightful, detailed feedback on creative work. He can give broad, structural feedback as well as line edit notes that really helped me shape my work."
+  </blockquote>
+  <p>Beth Hurst, Poet, Writer, Graduate of MSt in Creative Writing, University of Oxford</p>
+</div>
+
+<div className="script-reading-testimonialItem">
+  <blockquote>
+    “Luke Reilly has provided valuable feedback for my writing which improved my work across a variety of mediums. As an award-nominated screenwriter, his opinion is trustworthy and his industry insight is important for those aiming to make the next steps in their professional creative practice. I highly recommend this service.”
+  </blockquote>
+  <p>Harper Walton, Author of <em>Midnight Movies</em></p>
+</div>
   </motion.div>
 
-  <div className="script-reading-testimonialSketch">
-    <img src="/images/sketch1.png" alt="" />
-  </div>
+  <div className="script-reading-headBurst" aria-hidden="true">
+  <img
+    src="/images/head1.png"
+    alt=""
+    className="script-reading-headBurst-layer headBurst-layer1"
+  />
+  <img
+    src="/images/head2.png"
+    alt=""
+    className="script-reading-headBurst-layer headBurst-layer2"
+  />
+  <img
+    src="/images/head3.png"
+    alt=""
+    className="script-reading-headBurst-layer headBurst-layer3"
+  />
+</div>
 </div>
     </section>
   );

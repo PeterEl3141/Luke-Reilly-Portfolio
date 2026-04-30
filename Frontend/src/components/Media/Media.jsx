@@ -2,6 +2,7 @@ import "./Media.css";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Link } from "react-router-dom";
+import DoodleButton from "../DoodleButton/DoodleButton";
 
 const Media = ({ media = [], filmTitle = "" }) => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -51,10 +52,14 @@ const Media = ({ media = [], filmTitle = "" }) => {
             <p className="media-excerpt">{activeItem.excerpt}</p>
 
             {activeItem.link && (
-              <Link to={activeItem.link} className="media-button">
-                {activeItem.buttonText || "Read full article"}
-              </Link>
-            )}
+  <DoodleButton
+    href={activeItem.link}
+    external={true}
+    className="media-button"
+  >
+    {activeItem.buttonText || "Read full article"}
+  </DoodleButton>
+)}
           </motion.div>
         </AnimatePresence>
       </div>
