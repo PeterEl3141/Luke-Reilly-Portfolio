@@ -32,7 +32,7 @@ const ScriptReading = () => {
 
     <p className="script-reading-intro">
       I offer detailed script feedback for writers and directors working
-      on short films, features, treatments, and early-stage ideas.
+      on short films, features.
       Whether you need structural notes, thematic guidance, or a sharper
       sense of what the piece is doing, the aim is always to help the
       work become more precise, compelling, and alive.
@@ -84,12 +84,12 @@ const ScriptReading = () => {
         <div className="script-reading-column">
           <h2>How it works</h2>
           <p>
-            You send the script, treatment, or draft material, along with a
+            You send the script along with a
             short note about where the project is at and what kind of feedback
             would be most useful.
           </p>
           <p>
-            I then respond with a written set of notes focused on both the
+            I will set up a thirty minute call, and then respond with a written set of notes focused on both the
             larger structural picture and the finer details of the writing.
           </p>
           <p>
@@ -115,17 +115,19 @@ const ScriptReading = () => {
 
 <div className="script-reading-testimonialItem">
   <blockquote>
+    “Luke Reilly has provided valuable feedback for my writing which improved my work across a variety of mediums. As an award-nominated screenwriter, his opinion is trustworthy and his industry insight is important for those aiming to make the next steps in their professional creative practice. I highly recommend this service.”
+  </blockquote>
+  <p>Harper Walton, Author of <em>Midnight Movies</em></p>
+</div>
+
+<div className="script-reading-testimonialItem">
+  <blockquote>
     "Luke gives insightful, detailed feedback on creative work. He can give broad, structural feedback as well as line edit notes that really helped me shape my work."
   </blockquote>
   <p>Beth Hurst, Poet, Writer, Graduate of MSt in Creative Writing, University of Oxford</p>
 </div>
 
-<div className="script-reading-testimonialItem">
-  <blockquote>
-    “Luke Reilly has provided valuable feedback for my writing which improved my work across a variety of mediums. As an award-nominated screenwriter, his opinion is trustworthy and his industry insight is important for those aiming to make the next steps in their professional creative practice. I highly recommend this service.”
-  </blockquote>
-  <p>Harper Walton, Author of <em>Midnight Movies</em></p>
-</div>
+
   </motion.div>
 
   <div className="script-reading-headBurst" aria-hidden="true">

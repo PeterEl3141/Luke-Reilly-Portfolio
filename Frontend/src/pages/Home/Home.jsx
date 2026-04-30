@@ -29,7 +29,7 @@ const Home = () => {
 
         {/* Intro */}
         <div className="home-intro">
-          <p className="home-role">Writer // Director · London</p>
+          <p className="home-role">Writer // Director</p>
           <div className="home-blurb">
           <p>
           Luke Reilly is an award-winning screenwriter and director whose short film Meat screened at Slamdance and won Best Short at the African Movie Academy Awards. His feature Small Gods and debut film The Love Song of J. Alfred Prufrock are due for release this year.
