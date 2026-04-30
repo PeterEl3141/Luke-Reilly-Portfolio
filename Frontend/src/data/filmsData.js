@@ -3,7 +3,7 @@ const filmsData = [
     {
       slug: "prisoners-of-air",
       title: "PRISONERS OF AIR",
-      subheading: "2026 TBD | Writer",
+      subheading: "2026 Screenwriter",
   
       year: "2026",
       role: "Screenwriter",
@@ -104,7 +104,7 @@ const filmsData = [
     {
       slug: "prufrock",
       title: "THE LOVE SONG OF J. ALFRED PRUFROCK",
-      subheading: "2026 · 32 min | Director / Writer / Production",
+      subheading: "2026 · 32 min | Writer / Director",
   
       year: "2026",
       runtime: "32 min",
@@ -136,7 +136,7 @@ const filmsData = [
     {
         slug: "small-gods",
         title: "SMALL GODS",
-        subheading: "2025 · 109 min | Screenplay",
+        subheading: "2025 · 109 min | Screenwriter",
     
         year: "2025",
         runtime: "109 min",
@@ -243,11 +243,11 @@ const filmsData = [
     {
         slug: "meat",
         title: "MEAT",
-        subheading: "2021 · 16 min | Writer / Co-Director / Editing / Sound",
+        subheading: "2021 · 16 min | Writer / Co-Director",
       
         year: "2021",
         runtime: "16 min",
-        role: "Writer / Director",
+        role: "Writer / Director / Editing / Sound",
         genre: "Drama / Thriller",
         format: "Feature Film",
       
