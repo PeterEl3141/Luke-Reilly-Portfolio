@@ -3,7 +3,7 @@ const fictionData = [
         slug: "interval",
         title: "Interval",
         genre: "Ghost Story",
-        medium: "//Featured in the Short Story Collection",
+        medium: "//Featured in a Short Story Collection",
         publication: "BUOY PRESS",
         excerpt:
         "This collection of 11 short stories responding to the theme Carnival at the End of the World was guest edited by Harper Walton. \n People metamorphose into birds, vows of silence become clown eras, hallucinogenic visions are plentiful, language and form disintegrates and evolves, drugs unlock psychogeography, sex and gender fluctuate and threaten to explode, bodies open and close, toilet queues stretch on for infinity, and streams of consciousness are polluted.",
@@ -17,7 +17,7 @@ const fictionData = [
         title: "Fag Break",
         genre: "Flash Fiction",
         medium: "//Short Story",
-        publication: "Literary Magazine",
+        publication: "Ink Sweat and Tears",
         excerpt:
           "A meek and graceful man dressed in a loose-fitting suit paces across the roof of the Four Seasons hotel. He smokes a cigarette and watches the Seoul skyline. He inhales. Beneath his skin, the smoke stains his lungs, thickens the blood. Marking the slow, imperceptible wearing away of his being. The burden of an entire species hangs on his slight shoulders.",
         link: "https://inksweatandtears.co.uk/on-national-flash-fiction-day-luke-reilly/",
@@ -29,8 +29,8 @@ const fictionData = [
       slug: "cat-food",
       title: "Cat Food",
       genre: "Fiction",
-      medium: "//Literary Magazine",
-      publication: "Published as Part of Campfire 17",
+      medium: "//Short Story",
+      publication: "Published in Firewords as Part of Campfire 17",
       
       image: "/images/cat-food.png",
       date: "2024",

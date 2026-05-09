@@ -12,7 +12,7 @@ const filmsData = [
   
   
       description:
-        "A bold investigation into the limits of friendship, and the ethicality of empire",
+        "It’s 1850. Two explorers form an unlikely friendship as they search the Arctic for a missing expedition. But can their new bond survive the discovery of its terrible fate?",
   
       poster: "/images/prisoners-of-air.png",
       image: "/images/prisoners-of-air.png",
@@ -121,7 +121,7 @@ const filmsData = [
     {
       slug: "prufrock",
       title: "THE LOVE SONG OF J. ALFRED PRUFROCK",
-      subheading: "2026 · 32 min | Writer / Director",
+      subheading: "2026 · 12 min | Writer / Director",
   
       year: "2026",
       runtime: "12 min",
@@ -132,7 +132,7 @@ const filmsData = [
       credits: "Based on the poem by T. S. Eliot",
   
       description:
-        "A cinematic interpretation of T. S. Eliot's iconic poem, exploring themes of alienation, self-consciousness, and the fragmented modern psyche.",
+        "On a late summer's evening, a middle-aged man is overwhelmed with anxiety when attempting to leave his house. An adaption of the TS Eliot poem, starring Titanic's Jonny Phillips.",
   
       poster: "/images/lojap1.jpeg",
       images: ["/images/lojap1.jpeg",
@@ -167,11 +167,10 @@ const filmsData = [
         genre: "Drama",
         format: "Feature Film",
     
-        credits: "Sovereign Films and Scarlett Productions",
+        credits: "Sovereign Films and Scarlet Productions",
     
         description:
-          "A brief synopsis of the film goes here. This can be a logline or a slightly longer paragraph describing the story, themes, or production context of the project.",
-    
+          ""
         poster: "/images/small-gods1.png",
 
         images: ["/images/small-gods1.png",
@@ -275,7 +274,7 @@ const filmsData = [
       
         year: "2021",
         runtime: "16 min",
-        role: "Writer / Codirector / Editing / Sound / Actor",
+        role: "Writer / Codirector (Also Editing / Sound / Actor)",
         genre: "Drama / Thriller",
         format: "Short Film",
       
