@@ -7,8 +7,8 @@ const filmsData = [
   
       year: "2026",
       role: "Screenwriter",
-      genre: "Exploration of Polar Exploration",
-      format: "Short Film",
+      genre: "Period, Survival, Horror",
+      format: "Feature Film",
   
   
       description: [
@@ -166,7 +166,7 @@ const filmsData = [
       media: [
         {
           id: 1,
-          title: "Brittish Council",
+          title: "British Film Council",
           excerpt:
             "'Jonny Phillips plays Alfred - or a man remembering the stream of consciousness poem - as he prepares to leave his home for an evening out. Based on the poem by T.S Eliot, adapted by Luke Reilly.'",
           image: "/images/bc.png",
@@ -302,7 +302,7 @@ const filmsData = [
             },
             {
               id: 6,
-              title: "Brittish Council",
+              title: "British Film Council",
               excerpt:
               "'While struggling to provide for her son, a landless single mother falls in love with a charismatic street performer. But when a crisis strikes, it threatens to destroy their young family.'",
               image: "/images/bc.png",
@@ -311,7 +311,7 @@ const filmsData = [
             },
             {
               id: 7,
-              title: "Brittish Council",
+              title: "Variety",
               excerpt:
               "'The American Black Film Festival has unveiled the competition lineup for its 30th-anniversary edition, with highly anticipated projects including [...]'",
               image: "/images/variety.webp",
@@ -417,7 +417,7 @@ const filmsData = [
           },
           {
             id: 3,
-            title: "Organization for Identity + Cultural Development; Screening and Director's Q & A",
+            title: "Sellheim Environmental",
             excerpt:
             "'On 28 January I had the honour of being invited to an online screening of the short movie Nyama. The event was organised by Survival International and was followed by a Q&A session with the directors and the actors. Nyama is somewhat of a teaser of a larger film project called Small Gods, both directed by Asher Rosen and Ezra Mugisha. '",
             image: "/images/sellheim.png",
