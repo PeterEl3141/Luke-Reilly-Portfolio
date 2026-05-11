@@ -117,8 +117,16 @@ const filmsData = [
         },
       ],
 
+      quotesOnFilm: [
+        {
+          quote:
+            "It is extraordinary. I am so familiar with Prufrock...and you have unpeeled the patina of familiarity. I hear it as I used to hear it when I was first overwhelmed by it.",
+          attribution: "Raymond Tallis, Author and Philosopher",
+        },
+      ],
+
       scriptDownload: {
-        label: "Download the Script",
+        label: "Download the Treatment",
         file: "/files/prisoners-of-air-script.pdf",
       },
     },
@@ -163,6 +171,14 @@ const filmsData = [
       accolades: [
       ],
 
+      quotesOnFilm: [
+        {
+          quote:
+            "It is extraordinary. I am so familiar with Prufrock...and you have unpeeled the patina of familiarity. I hear it as I used to hear it when I was first overwhelmed by it.",
+          attribution: "Raymond Tallis, Author and Philosopher",
+        },
+      ],
+
       media: [
         {
           id: 1,
@@ -173,15 +189,7 @@ const filmsData = [
           link: "https://filmsandfestivals.britishcouncil.org/projects/the-lovesong-of-alfred-j-prufrock",
           buttonText: "Read full article",
         },
-        {
-          id: 2,
-          title: "Raymond Tallis, Author and Philosopher",
-          excerpt:
-            "It is extraordinary. I am so familiar with Prufrock...and you have unpeeled the patina of familiarity. I hear it as I used to hear it when I was first overwhelmed by it.",
-          image: "/images/tallis.avif",
-          
-          buttonText: "Read full article",
-        },
+        
       ],
     },
   
@@ -212,13 +220,19 @@ const filmsData = [
         images: ["/images/small-gods1.png",
         "/images/small-gods2.png",
         "/images/small-gods3.png",
-        "/images/small-gods4.png"],
+        "/images/small-gods4.png",
+        "/images/small-gods5.png",
+        "/images/small-gods6.png",
+        "/images/small-gods7.png",
+        "/images/small-gods8.png",
+        "/images/small-gods9.png",
+      ],
         
 
-        trailer: {
-            cloudflareId: "c049d08d9ed0cf843851dab095d0fc10",
-            poster: "/images/small-gods.png",
-          },
+      trailer: {
+        src: "/vids/small-gods-trailer.mp4",
+        poster: "/images/small-gods.png",
+      },
 
           accolades: [
             {
@@ -350,12 +364,16 @@ const filmsData = [
           "/images/meat3.png",
           "/images/meat4.png",
           "/images/meat5.png",
+          "/images/meat6.png",
+          "/images/meat7.png",
+          "/images/meat8.png",
+          "/images/meat9.png",
         ],
 
         trailer: {
-            cloudflareId: "71e89da05f0b8c2918c801c9c0f93f28",
-            poster: "/images/meat.png",
-          },
+          src: "/vids/nyama-trailer.mp4",
+          poster: "/images/meat.png",
+        },
 
           accolades: [
             {

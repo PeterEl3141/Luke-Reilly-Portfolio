@@ -1,9 +1,11 @@
 /* Root */
 .site-footer {
-    background-color: rgb(16, 16, 16); /* flipped from black */
-    color: white;            /* flipped from neutral-400 to black */
-    padding: 2.5rem 0;         /* ~py-10 */
-  }
+  position: relative;
+  z-index: 10;
+  background-color: rgb(16, 16, 16);
+  color: white;
+  padding: 2.5rem 0;
+}
   
   /* Layout */
   .footer-container {
@@ -11,6 +13,7 @@
     margin: 0 auto;
     padding: 0 1rem;           /* ~px-4 */
     text-align: center;
+    z-index: 10;
   }
   
   /* Icons row */

@@ -278,6 +278,35 @@
   margin-bottom: 0;
 }
 
+
+.film-details-quotes {
+  max-width: 900px;
+  margin: 72px 0 48px;
+  padding-top: 28px;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.film-details-quoteItem {
+  max-width: 760px;
+}
+
+.film-details-quote {
+  margin: 0;
+  font-size: clamp(1.3rem, 2.2vw, 2.2rem);
+  line-height: 1.5;
+  font-style: italic;
+  opacity: 0.92;
+}
+
+.film-details-quoteAttribution {
+  margin-top: 18px;
+  font-size: 0.72rem;
+  line-height: 1.5;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  opacity: 0.58;
+}
+
 @media (max-width: 1000px) {
   .film-details-gallery {
     grid-template-columns: repeat(2, minmax(0, 1fr));

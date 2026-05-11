@@ -232,13 +232,7 @@
   -webkit-backdrop-filter: blur(10px);
 }
 
-.script-reading-testimonialColumn:nth-child(2) {
-  margin-top: 36px;
-}
 
-.script-reading-testimonialColumn:nth-child(3) {
-  margin-top: 18px;
-}
 
 .script-reading-testimonialColumn::-webkit-scrollbar {
   width: 6px;
@@ -296,6 +290,42 @@
   z-index: 1;
 }
 
+
+
+.script-reading-faceFan {
+  position: absolute;
+  left: -20px;
+  bottom: 200px; /* was probably too low / negative */
+  width: 700px;
+  height: 1100px;
+  pointer-events: none;
+  user-select: none;
+  z-index: 1; /* behind the testimonial cards */
+}
+
+.script-reading-faceFanImage {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: clamp(900px, 70vw, 1200px); /* much bigger */
+  height: auto;
+  opacity: 0;
+  transform-origin: bottom left;
+  mix-blend-mode: lighten;
+  filter: grayscale(100%) contrast(1.05);
+}
+
+.script-reading-faceFanImage-1 {
+  left: 0;
+}
+
+.script-reading-faceFanImage-2 {
+  left: 42px;
+}
+
+.script-reading-faceFanImage-3 {
+  left: 84px;
+}
 /* Mobile */
 
 @media (max-width: 900px) {

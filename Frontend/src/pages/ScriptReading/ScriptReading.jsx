@@ -85,11 +85,11 @@ const ScriptReading = () => {
           <h2>How it works</h2>
           <p>
             You send the script along with a
-            short note about where the project is at and what kind of feedback
+            short note about what kind of feedback
             would be most useful. 
           </p>
           <p>
-            We will have a thirty minute call and a chat. I will then go away and respond with a written set of notes focused on both the
+            We will schedule a thirty minute call and a chat. I will then go away and respond with a written set of notes focused on both the
             larger structural picture and the finer details of the writing.
           </p>
           <p>
@@ -146,6 +146,38 @@ const ScriptReading = () => {
     aria-hidden="true"
     className="script-reading-testimonialMarginalia"
   />
+
+
+
+
+<div className="script-reading-faceFan" aria-hidden="true">
+  {["/images/h1.png", "/images/h2.png", "/images/h3.png"].map((src, index) => (
+    <motion.img
+      key={src}
+      src={src}
+      alt=""
+      className={`script-reading-faceFanImage script-reading-faceFanImage-${index + 1}`}
+      initial={{
+        opacity: 0,
+        rotate: -24,
+        x: -28,
+        y: 20,
+      }}
+      whileInView={{
+        opacity: 0.14,
+        rotate: [-24, 6 + index * 10],
+        x: 0,
+        y: 0,
+      }}
+      viewport={{ once: true, amount: 0.25 }}
+      transition={{
+        duration: 0.85,
+        delay: 0.25 + index * 0.18,
+        ease: "easeOut",
+      }}
+    />
+  ))}
+</div>
 </motion.div>
 
  

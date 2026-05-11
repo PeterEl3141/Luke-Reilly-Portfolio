@@ -16,7 +16,7 @@ export default function Footer() {
         <div className="footer-icons">
           {/* Instagram */}
           <a
-            href="https://instagram.com/"
+            href="https://www.instagram.com/eubulus_kane/reels/"
             target="_blank"
             rel="noreferrer"
             className="social-link"
@@ -44,24 +44,10 @@ export default function Footer() {
             </Icon>
           </a>
 
-          {/* YouTube */}
-          <a
-            href="https://youtube.com/"
-            target="_blank"
-            rel="noreferrer"
-            className="social-link"
-            aria-label="YouTube"
-          >
-            <Icon title="YouTube">
-              <svg viewBox="0 0 24 24" aria-hidden="true">
-                <path d="M23.5 7.2a4.6 4.6 0 0 0-3.3-3.3C18.4 3.4 12 3.4 12 3.4s-6.4 0-8.2.5A4.6 4.6 0 0 0 .5 7.2 47.7 47.7 0 0 0 0 12c0 1.6.2 3.2.5 4.8a4.6 4.6 0 0 0 3.3 3.3c1.8.5 8.2.5 8.2.5s6.4 0 8.2-.5a4.6 4.6 0 0 0 3.3-3.3c.3-1.6.5-3.2.5-4.8s-.2-3.2-.5-4.8zM9.8 15.5V8.5l6.2 3.5-6.2 3.5z" />
-              </svg>
-            </Icon>
-          </a>
-
+       
           {/* Email */}
           <a
-            href="mailto:contact@example.com"
+            href="mailto:reillyluke51@gmail.com"
             className="social-link"
             aria-label="Email"
           >
