@@ -117,13 +117,6 @@ const filmsData = [
         },
       ],
 
-      quotesOnFilm: [
-        {
-          quote:
-            "It is extraordinary. I am so familiar with Prufrock...and you have unpeeled the patina of familiarity. I hear it as I used to hear it when I was first overwhelmed by it.",
-          attribution: "Raymond Tallis, Author and Philosopher",
-        },
-      ],
 
       scriptDownload: {
         label: "Download the Treatment",

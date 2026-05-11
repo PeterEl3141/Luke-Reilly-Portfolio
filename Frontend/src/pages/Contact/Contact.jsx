@@ -70,11 +70,11 @@ const Contact = () => {
 </p>
 
 <p>
-  Luke followed this up with his full-length screenplay, <em>Small Gods</em>, which expanded on <em>Meat</em>’s themes and was funded by Sovereign Films (known for <em>Triangle of Sadness</em>). It won Best Feature at the BIFA-qualifying Cornwall Film Festival, Best Director at Beijing International Film Festival, Best Actress at the 2025 AMAAs. It is set for a cinema release this year.
+  Luke followed this up with his full-length screenplay, <em>Small Gods</em>, which expanded on <em>Meat</em>’s themes and was funded by Sovereign Films (known for <em>Triangle of Sadness</em>). It won Best Feature at the BIFA-qualifying Cornwall Film Festival, Best Director at Beijing International Film Festival, and Best Actress at the 2025 AMAAs. It is set for a cinema release this year.
 </p>
 
 <p>
-  His writer-director debut, <em>The Love Song of J Alfred Prufrock</em>, stars <em>Titanic</em>’s Jonny Phillips and is currently being submitted to festivals. His latest screenplay, <em>Prisoners of Air</em>, was shortlisted for the Kinolime Feature Screenplay Competition out of 2,500 entries. His fiction has been published by literary magazines such as <em>Ink, Sweat and Tears</em>, <em>Buoy Press</em> and <em>Firewords</em>. He also writes essays online under the search-optimisable but pretentious synonym, <em>Eubulus Kane</em>. Browse at will!
+  His writer-director debut, <em>The Love Song of J Alfred Prufrock</em>, stars <em>Titanic</em>’s Jonny Phillips and is currently being submitted to festivals. His latest screenplay, <em>Prisoners of Air</em>, was shortlisted for the Kinolime Feature Screenplay Competition out of 2,500 entries. His fiction has been published by literary magazines such as <em>Ink, Sweat and Tears</em>, <em>Buoy Press</em> and <em>Firewords</em>. He also writes essays online under the search-optimisable but pretentious pseudonym, <em>Eubulus Kane</em>. Browse at will!
 </p>
         </motion.div>
 
